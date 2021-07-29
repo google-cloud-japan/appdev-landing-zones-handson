@@ -118,7 +118,7 @@ GitOps パイプラインのテンプレートをダウンロードし、
 
 ```bash
 cd ~
-kpt pkg get https://github.com/GoogleCloudPlatform/gcp-getting-started-lab-jp.git/cad/landing-zones/gitops@landing-zones gitops
+kpt pkg get https://github.com/google-cloud-japan/appdev-landing-zones-handson.git/landing-zones/gitops@landing-zones gitops
 ```
 
 プロジェクト ID やプロジェクト番号を修正します。
@@ -167,7 +167,7 @@ kubectl get -n {{namespace}} gcp
 - Cloud Build トリガー: source-repo への push でテストなどを起動
 - Config Management: Config Controller が deployment-repo の master ブランチを監視する設定
 
-実運用において `source-repo` をお使いの GitHub や GitLab とする場合は [こちらの設定](https://github.com/GoogleCloudPlatform/gcp-getting-started-lab-jp/blob/landing-zones/cad/landing-zones/gitops/hydration-trigger.yaml) を参考に Cloud Build トリガーをそれに併せて設定し、ビルドステップの中で、適用すべきリソースを `deployment-repo` に git push することで同様のパイプラインが構成できます。
+実運用において `source-repo` をお使いの GitHub や GitLab とする場合は [こちらの設定](https://github.com/google-cloud-japan/appdev-landing-zones-handson/blob/landing-zones/landing-zones/gitops/hydration-trigger.yaml) を参考に Cloud Build トリガーをそれに併せて設定し、ビルドステップの中で、適用すべきリソースを `deployment-repo` に git push することで同様のパイプラインが構成できます。
 
 ## パイプラインそのものを GitOps 管理下へ
 
@@ -210,7 +210,7 @@ git push
 Landing zones のブループリントをダウンロードし、
 
 ```bash
-kpt pkg get https://github.com/GoogleCloudPlatform/gcp-getting-started-lab-jp.git/cad/landing-zones/landing-zone@landing-zones landing-zone
+kpt pkg get https://github.com/google-cloud-japan/appdev-landing-zones-handson.git/landing-zones/landing-zone@landing-zones landing-zone
 git add landing-zone/
 git commit -m "Add landing zone"
 ```
@@ -303,7 +303,7 @@ gcloud resource-manager org-policies list --organization "${ORG_ID}"
 
 ```bash
 cd ~/source-repo
-kpt pkg get https://github.com/GoogleCloudPlatform/gcp-getting-started-lab-jp.git/cad/landing-zones/resources/org@landing-zones landing-zone/org
+kpt pkg get https://github.com/google-cloud-japan/appdev-landing-zones-handson.git/landing-zones/resources/org@landing-zones landing-zone/org
 ```
 
 プロジェクト ID や請求アカウントなどの適切な設定に変更しましょう。

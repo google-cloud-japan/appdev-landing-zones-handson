@@ -10,12 +10,12 @@
 
 ```sh
 cloudshell_open --page "shell" \
-    --repo_url "https://github.com/GoogleCloudPlatform/gcp-getting-started-lab-jp.git" \
-    --git_branch "landing-zones" --tutorial "cad/landing-zones/tutorial.md"
+    --repo_url "https://github.com/google-cloud-japan/appdev-landing-zones-handson.git" \
+    --tutorial "landing-zones/tutorial.md"
 ```
 
 3. Cloud Shell の再起動や予期せずチュートリアルが消えてしまった場合は、それぞれ以下で再開できます。
 
 ```sh
-teachme ~/cloudshell_open/gcp-getting-started-lab-jp/cad/landing-zones/tutorial.md
+teachme ~/cloudshell_open/appdev-landing-zones-handson/landing-zones/tutorial.md
 ```
