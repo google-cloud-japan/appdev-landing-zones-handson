@@ -118,7 +118,7 @@ GitOps パイプラインのテンプレートをダウンロードし、
 
 ```bash
 cd ~
-kpt pkg get https://github.com/google-cloud-japan/appdev-landing-zones-handson.git/landing-zones/gitops@landing-zones gitops
+kpt pkg get https://github.com/google-cloud-japan/appdev-landing-zones-handson.git/landing-zones/gitops gitops
 ```
 
 プロジェクト ID やプロジェクト番号を修正します。
@@ -210,7 +210,7 @@ git push
 Landing zones のブループリントをダウンロードし、
 
 ```bash
-kpt pkg get https://github.com/google-cloud-japan/appdev-landing-zones-handson.git/landing-zones/landing-zone@landing-zones landing-zone
+kpt pkg get https://github.com/google-cloud-japan/appdev-landing-zones-handson.git/landing-zones/landing-zone landing-zone
 git add landing-zone/
 git commit -m "Add landing zone"
 ```
@@ -303,7 +303,7 @@ gcloud resource-manager org-policies list --organization "${ORG_ID}"
 
 ```bash
 cd ~/source-repo
-kpt pkg get https://github.com/google-cloud-japan/appdev-landing-zones-handson.git/landing-zones/resources/org@landing-zones landing-zone/org
+kpt pkg get https://github.com/google-cloud-japan/appdev-landing-zones-handson.git/landing-zones/resources/org landing-zone/org
 ```
 
 プロジェクト ID や請求アカウントなどの適切な設定に変更しましょう。
